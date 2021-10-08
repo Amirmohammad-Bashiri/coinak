@@ -1,4 +1,5 @@
 import Hero from "../components/home-page/hero/hero";
+import TrendingSection from "../components/home-page/trending-section.js/trending-section";
 
 function HomePage() {
   return (
@@ -7,6 +8,7 @@ function HomePage() {
       <Hero />
 
       {/* Trending section */}
+      <TrendingSection />
 
       {/* Currencies section */}
 
