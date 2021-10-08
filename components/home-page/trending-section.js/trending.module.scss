@@ -3,9 +3,32 @@
 .trending {
   padding: 4rem 3rem;
 
-  .trending__headline {
+  .trending__header {
     text-align: center;
     letter-spacing: 0.08rem;
-    font-size: $font-lg;
+    font-size: $font-2xl;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+    background: linear-gradient($emerald-4, $emerald-2, $emerald-1);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+@media (min-width: 768px) {
+  .trending {
+    .trending__header {
+      font-size: $font-3xl;
+      margin-top: 2.5rem;
+      margin-bottom: 7rem;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .trending {
+    .trending__header {
+      font-size: $font-4xl;
+    }
   }
 }

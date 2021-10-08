@@ -6,7 +6,7 @@ function TrendingSection() {
   return (
     <section className="bg-gray-7 text-gray-1">
       <div className={styles.trending}>
-        <div className={`mb-3 ${styles.trending__headline}`}>
+        <div className={styles.trending__header}>
           <h1>Trending Coins</h1>
         </div>
 

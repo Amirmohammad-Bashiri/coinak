@@ -50,3 +50,9 @@
   //   z-index: -1;
   // }
 }
+
+@media (min-width: 768px) {
+  .card {
+    max-width: 350px;
+  }
+}

@@ -4,7 +4,13 @@ import styles from "./trending-coin-list.module.scss";
 
 function TrendingCoinsList() {
   return (
-    <div>
+    <div className={styles["coins-list"]}>
+      <TrendingCoinCard />
+      <TrendingCoinCard />
+      <TrendingCoinCard />
+      <TrendingCoinCard />
+      <TrendingCoinCard />
+      <TrendingCoinCard />
       <TrendingCoinCard />
     </div>
   );
