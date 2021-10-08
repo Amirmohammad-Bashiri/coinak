@@ -4,7 +4,7 @@ import styles from "./navbar.module.scss";
 
 function Navbar() {
   return (
-    <header className="bg-gray-5 text-gray-1 p-2">
+    <header className="bg-gray-8 text-gray-1 p-2">
       <nav className={styles.navbar}>
         <div className={styles.logo}>
           <Link href="/">

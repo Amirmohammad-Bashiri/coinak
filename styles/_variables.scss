@@ -3,13 +3,18 @@ $emerald-1: #6ee7b7;
 $emerald-2: #34d399;
 $emerald-3: #10b981;
 $emerald-4: #059669;
+$teal-1: #99f6e4;
 $gray-1: #f9fafb;
 $gray-2: #f3f4f6;
-$gray-3: #374151;
-$gray-4: #1f2937;
-$gray-5: #111827;
+$gray-3: #e5e7eb;
+$gray-4: #d1d5db;
+$gray-5: #9ca3af;
+$gray-6: #374151;
+$gray-7: #1f2937;
+$gray-8: #111827;
 
 $colors: (
+  "teal-1": $teal-1,
   "emerald-1": $emerald-1,
   "emerald-2": $emerald-2,
   "emerald-3": $emerald-3,
@@ -19,6 +24,9 @@ $colors: (
   "gray-3": $gray-3,
   "gray-4": $gray-4,
   "gray-5": $gray-5,
+  "gray-6": $gray-6,
+  "gray-7": $gray-7,
+  "gray-8": $gray-8,
 );
 
 // spacing

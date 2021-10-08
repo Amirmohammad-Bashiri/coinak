@@ -1,0 +1,55 @@
+@import "../../../styles/variables";
+
+.hero {
+  padding: 3rem;
+
+  .hero__headline {
+    text-align: center;
+    font-size: $font-xl;
+    letter-spacing: 0.06rem;
+
+    h2 {
+      background: linear-gradient($emerald-3, $emerald-2, $emerald-1);
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .hero__description {
+    text-align: center;
+    font-size: $font-lg;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    padding-bottom: 5rem;
+    padding-top: 4rem;
+
+    .hero__headline {
+      font-size: $font-3xl;
+      letter-spacing: 0.08rem;
+    }
+
+    .hero__description {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    .hero__description {
+      max-width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1536px) {
+  .hero {
+    .hero__description {
+      max-width: 40%;
+    }
+  }
+}

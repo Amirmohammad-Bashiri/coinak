@@ -1,7 +1,16 @@
+import Hero from "../components/home-page/hero/hero";
+
 function HomePage() {
   return (
-    <div className="text-emerald-1">
-      <p>coinak</p>
+    <div>
+      {/* Hero section */}
+      <Hero />
+
+      {/* Trending section */}
+
+      {/* Currencies section */}
+
+      {/* News section */}
     </div>
   );
 }
