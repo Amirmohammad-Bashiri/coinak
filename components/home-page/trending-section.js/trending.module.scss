@@ -1,0 +1,11 @@
+@import "../../../styles/variables";
+
+.trending {
+  padding: 4rem 3rem;
+
+  .trending__headline {
+    text-align: center;
+    letter-spacing: 0.08rem;
+    font-size: $font-lg;
+  }
+}

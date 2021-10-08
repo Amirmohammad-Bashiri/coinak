@@ -4,12 +4,14 @@ import styles from "./trending.module.scss";
 
 function TrendingSection() {
   return (
-    <section>
-      <div>
-        <h1>Trending Coins</h1>
-      </div>
+    <section className="bg-gray-7 text-gray-1">
+      <div className={styles.trending}>
+        <div className={`mb-3 ${styles.trending__headline}`}>
+          <h1>Trending Coins</h1>
+        </div>
 
-      <TrendingCoinsList />
+        <TrendingCoinsList />
+      </div>
     </section>
   );
 }
