@@ -1,4 +1,4 @@
-function Home() {
+function HomePage() {
   return (
     <div className="text-emerald-1">
       <p>coinak</p>
@@ -6,4 +6,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;
