@@ -26,9 +26,12 @@ $base-padding: 0.75rem;
 $base-margin: 0.75rem;
 
 // font sizes
-$base-font-size: 1rem;
-$font-sm: $base-font-size * 0.75;
-$font-md: $base-font-size * 1.2;
-$font-lg: $base-font-size * 1.5;
-$font-xl: $base-font-size * 2;
-$font-xxl: $base-font-size * 3;
+$font-base: 1rem;
+$font-sm: $font-base * 0.75;
+$font-lg: $font-base * 1.125;
+$font-xl: $font-base * 1.25;
+$font-2xl: $font-base * 1.5;
+$font-3xl: $font-base * 1.875;
+$font-4xl: $font-base * 2.25;
+$font-5xl: $font-base * 3;
+$font-6xl: $font-base * 3.75;
