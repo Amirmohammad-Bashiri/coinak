@@ -7,6 +7,7 @@ import coinImage from "./dogecoin.png";
 function TrendingCoinCard() {
   return (
     <div className={`${styles.card} bg-gray-8 text-gray-2 p-2`}>
+      <div className={styles.card__background}></div>
       <div className={styles.card__header}>
         <h3>Bitcoin</h3>
         <Image src={coinImage} alt="bitcoin" width={30} height={30} />
