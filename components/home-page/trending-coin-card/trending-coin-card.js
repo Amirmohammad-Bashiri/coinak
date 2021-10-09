@@ -1,11 +1,16 @@
 import Image from "next/image";
 
+import { hasDecimal } from "../../../utils/hasDecimal";
+
 import styles from "./trending-coin-card.module.scss";
 
 function TrendingCoinCard({ coin }) {
+  const currentPrice = hasDecimal
+    ? coin.current_price
+    : coin.current_price.toFixed(2);
   const marketCapChange = coin.market_cap_change_percentage_24h.toFixed(2);
   const isCapNegative = marketCapChange.startsWith("-");
-  const formattedPricePercentageChange = isCapNegative
+  const formattedPercentageChange = isCapNegative
     ? marketCapChange
     : `+${marketCapChange}`;
   const marketCapChangeClass = isCapNegative ? "text-red-1" : "text-emerald-3";
@@ -21,12 +26,12 @@ function TrendingCoinCard({ coin }) {
       <div className={styles["card__header--divide"]}></div>
 
       <div className={`${styles.card__body} text-gray-3`}>
-        <p>Price: ${coin.current_price.toFixed(2)}</p>
+        <p>Price: ${currentPrice}</p>
         <p>Market Cap: {coin.market_cap}</p>
         <p>
           Daily Change:{" "}
           <span className={marketCapChangeClass}>
-            {formattedPricePercentageChange}%
+            {formattedPercentageChange}%
           </span>
         </p>
       </div>
