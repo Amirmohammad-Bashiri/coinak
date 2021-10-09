@@ -10,9 +10,8 @@
   z-index: 3;
   cursor: pointer;
   background: linear-gradient(to right, $gray-8, $gray-7);
-  box-shadow: 0 0px 10px $emerald-2, 0 0px 0.5px $emerald-2,
-    0 0px 0.5px $emerald-2, 0 0px 0.5px $emerald-2, 0 0px 0.5px $emerald-2,
-    0 0px 0.5px $emerald-2;
+  box-shadow: 0 0px 8px $emerald-3, 0 0px 0px $emerald-3, 0 0px 0px $emerald-3,
+    0 0px 0px $emerald-3, 0 0px 0px $emerald-3, 0 0px 0px $emerald-3;
   transition: all 300ms ease-in-out;
 
   &:hover {
