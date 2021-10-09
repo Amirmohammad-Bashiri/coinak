@@ -11,7 +11,7 @@ function TrendingCoinCard({ coin }) {
   const marketCapChangeClass = isCapNegative ? "text-red-1" : "text-emerald-3";
 
   return (
-    <div className={`${styles.card} bg-gray-8 text-gray-2 p-2`}>
+    <div className={`${styles.card} text-gray-2 p-2`}>
       <div className={styles.card__background}></div>
       <div className={styles.card__header}>
         <h3>{coin.name}</h3>
