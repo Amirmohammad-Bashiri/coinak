@@ -17,6 +17,7 @@ function CurrenciesTable() {
             <th>Last 7 Days</th>
           </tr>
         </thead>
+
         <tr>
           <td>
             <div className={styles.currencies__table__coin}>
@@ -31,12 +32,12 @@ function CurrenciesTable() {
           </td>
           <td>BTC</td>
           <td>$55,651.80</td>
-          <td>1.2%</td>
+          <td>-3.4%</td>
           <td>$36,086,993,736</td>
           <td>$6,806,011</td>
           <td className={styles.currencies__table__sparkline}>
             <Image
-              src="https://www.coingecko.com/coins/1/sparkline"
+              src="https://www.coingecko.com/coins/975/sparkline"
               alt="sparkline"
               layout="responsive"
               height={30}
