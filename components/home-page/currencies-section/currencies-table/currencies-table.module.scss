@@ -1,0 +1,23 @@
+@import "../../../../styles/variables";
+
+.currencies__table {
+  width: 100%;
+  color: $gray-1;
+  background-color: $gray-7;
+  padding: 1rem;
+  border-radius: 5px;
+
+  th,
+  td {
+    border-bottom: 1px solid $gray-3;
+    padding: 0.5rem;
+  }
+
+  .currencies__table__coin {
+    display: flex;
+
+    span {
+      margin-left: 0.7rem;
+    }
+  }
+}
