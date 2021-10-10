@@ -1,4 +1,4 @@
-import TrendingCoinsList from "../trending-coins-list/trending-coins-list";
+import TrendingCoinsList from "./trending-coins-list/trending-coins-list";
 
 import styles from "./trending.module.scss";
 

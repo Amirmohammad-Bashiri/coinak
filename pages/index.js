@@ -1,6 +1,7 @@
-import Hero from "../components/home-page/hero/hero";
-import TrendingSection from "../components/home-page/trending-section.js/trending-section";
 import { client } from "../client";
+import Hero from "../components/home-page/hero/hero";
+import TrendingSection from "../components/home-page/trending-section/trending-section";
+import CurrenciesSection from "../components/home-page/currencies-section/currencies-section";
 
 function HomePage() {
   return (
@@ -9,6 +10,7 @@ function HomePage() {
       <TrendingSection />
 
       {/* Currencies section */}
+      <CurrenciesSection />
 
       {/* News section */}
     </div>

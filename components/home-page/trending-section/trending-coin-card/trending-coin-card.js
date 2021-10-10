@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { hasDecimal } from "../../../utils/hasDecimal";
+import { hasDecimal } from "../../../../utils/hasDecimal";
 
 import styles from "./trending-coin-card.module.scss";
 
