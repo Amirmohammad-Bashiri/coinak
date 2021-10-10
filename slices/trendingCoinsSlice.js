@@ -3,7 +3,7 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { client } from "../client";
 
 const initialState = {
-  data: [],
+  trendingCoins: [],
   error: null,
   loading: false,
 };

@@ -2,12 +2,13 @@ import { useMemo } from "react";
 import { configureStore } from "@reduxjs/toolkit";
 
 import trendingCoinsReducer from "./slices/trendingCoinsSlice";
+import coinsReducer from "./slices/coinsSlice";
 
 let store;
 
 function makeStore(preloadedState) {
   return configureStore({
-    reducer: { trendingCoins: trendingCoinsReducer },
+    reducer: { trendingCoins: trendingCoinsReducer, coins: coinsReducer },
     preloadedState,
   });
 }
