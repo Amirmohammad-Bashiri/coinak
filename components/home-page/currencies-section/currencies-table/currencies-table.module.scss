@@ -1,23 +1,42 @@
 @import "../../../../styles/variables";
 
-.currencies__table {
-  width: 100%;
-  color: $gray-1;
-  background-color: $gray-7;
-  padding: 1rem;
-  border-radius: 5px;
+.container {
+  overflow-x: scroll;
 
-  th,
-  td {
-    border-bottom: 1px solid $gray-3;
-    padding: 0.5rem;
+  .currencies__table {
+    width: 1400px;
+    color: $gray-1;
+    background-color: $gray-7;
+    padding: 1rem;
+    border-radius: 5px;
+
+    th,
+    td {
+      border-bottom: 1px solid $gray-3;
+      padding: 0.5rem;
+      text-align: center;
+    }
+
+    .currencies__table__coin {
+      display: flex;
+
+      span {
+        margin-left: 0.7rem;
+      }
+    }
+
+    .currencies__table__sparkline {
+      width: 220px;
+    }
   }
+}
 
-  .currencies__table__coin {
-    display: flex;
+@media (max-width: 1280px) {
+  .container {
+    width: 700px;
 
-    span {
-      margin-left: 0.7rem;
+    .currencies__table {
+      width: 900px;
     }
   }
 }
