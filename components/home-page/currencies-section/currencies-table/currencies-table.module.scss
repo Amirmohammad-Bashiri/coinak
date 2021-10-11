@@ -2,13 +2,13 @@
 
 .container {
   overflow-x: scroll;
+  border-radius: 5px;
 
   .currencies__table {
     min-width: 1450px;
     color: $gray-1;
     background-color: $gray-7;
     padding: 1rem;
-    border-radius: 5px;
 
     th,
     td {
