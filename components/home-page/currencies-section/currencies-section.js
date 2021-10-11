@@ -34,11 +34,11 @@ function CurrenciesSection() {
         </div>
         <CurrenciesTable coins={coins} loading={loading} />
         <div className={styles.pagination}>
-          <button disabled={!hasNext} onClick={nextPage}>
-            Next Page
-          </button>
           <button disabled={!hasPrev} onClick={prevPage}>
             Previous Page
+          </button>
+          <button disabled={!hasNext} onClick={nextPage}>
+            Next Page
           </button>
         </div>
       </div>
