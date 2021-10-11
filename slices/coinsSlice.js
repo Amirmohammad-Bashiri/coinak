@@ -10,9 +10,9 @@ const initialState = {
 
 export const fetchCoinsFromAPI = createAsyncThunk(
   "coins/fetchCoinsFromAPI",
-  async (currency = "usd", perPage = 30, page = 1) => {
+  async (args = { currency: "usd", perPage: 30, page: 1 }) => {
     const { data } = await client.get(
-      `/coins/markets?vs_currency=${currency}&order=market_cap_desc&per_page=${perPage}&page=${page}&sparkline=false`
+      `/coins/markets?vs_currency=${args.currency}&order=market_cap_desc&per_page=${args.perPage}&page=${args.page}&sparkline=false`
     );
     return data;
   }

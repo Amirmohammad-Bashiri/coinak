@@ -2,7 +2,7 @@ import Image from "next/image";
 
 import styles from "./currencies-table.module.scss";
 
-function CurrenciesTable() {
+function CurrenciesTable({ coins }) {
   return (
     <div className={styles.container}>
       <table className={styles.currencies__table}>
