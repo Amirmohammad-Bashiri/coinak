@@ -15,13 +15,19 @@ function Navbar() {
         <div>
           <ul className={styles.navbar__links}>
             <li className="text-hover-emerald-2">
-              <a href="#trending">Trending</a>
+              <Link href="/#trending">
+                <a>Trending</a>
+              </Link>
             </li>
             <li className="text-hover-emerald-2">
-              <a href="#currencies">Currencies</a>
+              <Link href="/#currencies">
+                <a>Currencies</a>
+              </Link>
             </li>
             <li className="text-hover-emerald-2">
-              <a href="#news">News</a>
+              <Link href="#news">
+                <a>News</a>
+              </Link>
             </li>
           </ul>
         </div>

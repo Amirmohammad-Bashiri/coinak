@@ -1,7 +1,7 @@
 @import "@styles/variables";
 
 .hero {
-  padding: 3rem;
+  padding: 3rem 1.5rem;
 
   .hero__headline {
     text-align: center;
@@ -18,13 +18,14 @@
   .hero__description {
     text-align: center;
     font-size: $font-lg;
+    padding-bottom: 2rem;
   }
 }
 
 @media (min-width: 768px) {
   .hero {
     padding-bottom: 5rem;
-    padding-top: 4rem;
+    padding-top: 5rem;
 
     .hero__headline {
       font-size: $font-3xl;
@@ -40,16 +41,30 @@
 
 @media (min-width: 1280px) {
   .hero {
+    .hero__headline {
+      font-size: $font-4xl;
+      padding-top: 4rem;
+    }
+
     .hero__description {
-      max-width: 50%;
+      max-width: 55%;
+      font-size: $font-2xl;
     }
   }
 }
 
 @media (min-width: 1536px) {
   .hero {
+    padding: 3rem;
+    padding-top: 5rem;
+
+    .hero__headline {
+      font-size: $font-5xl;
+    }
+
     .hero__description {
-      max-width: 40%;
+      max-width: 50%;
+      font-size: $font-3xl;
     }
   }
 }
