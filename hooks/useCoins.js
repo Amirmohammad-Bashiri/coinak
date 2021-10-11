@@ -2,13 +2,15 @@ import { useState, useEffect } from "react";
 
 import { fetchCoins } from "../client";
 
-export const useCoins = (inView, currency = "usd", perPage = 10, page = 1) => {
+export const useCoins = (inView, page = 1, currency = "usd", perPage = 10) => {
   const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     if (inView) {
+      setLoading(true);
+
       fetchCoins(currency, perPage, page)
         .then(data => {
           setData(data);
