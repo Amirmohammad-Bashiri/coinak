@@ -10,12 +10,12 @@ function CurrenciesTableItem({ coin }) {
     <tr>
       <td>
         <div className={styles.currencies__table__coin}>
-          <Image src={coin.image} alt={coin.symbol} width={20} height={20} />{" "}
+          <Image src={coin.image} alt={coin.symbol} width={25} height={25} />{" "}
           <span>{coin.name}</span>
         </div>
       </td>
-      <td>{coin.symbol}</td>
-      <td>{coin.current_price}</td>
+      <td>{coin.symbol.toUpperCase()}</td>
+      <td>${coin.current_price}</td>
       <td>{coin.market_cap_change_percentage_24h}%</td>
       <td>${coin.total_volume}</td>
       <td>${coin.market_cap}</td>

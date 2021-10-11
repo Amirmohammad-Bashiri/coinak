@@ -1,5 +1,6 @@
 .currencies__table__coin {
   display: flex;
+  align-items: center;
 
   span {
     margin-left: 0.7rem;
@@ -12,8 +13,14 @@
 
 @media (max-width: 420px) {
   .currencies__table__coin {
+    // justify-content: space-between;
+
+    img {
+      min-width: 20px;
+    }
+
     span {
-      margin-left: 0;
+      margin-left: 0.7rem;
     }
   }
 }
