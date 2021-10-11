@@ -1,5 +1,8 @@
+import Loader from "react-loader-spinner";
+
 import CurrenciesTableItem from "../currencies-table-item/currencies-table-item";
 
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import styles from "./currencies-table.module.scss";
 
 function CurrenciesTable({ coins, loading }) {
@@ -7,7 +10,9 @@ function CurrenciesTable({ coins, loading }) {
     <div className={styles.container}>
       <table className={styles.currencies__table}>
         {loading ? (
-          <div className={styles.table__placeholder}></div>
+          <div className={styles.table__placeholder}>
+            <Loader type="Rings" color="#e5e7eb" height={150} width={150} />
+          </div>
         ) : (
           <>
             <thead>
