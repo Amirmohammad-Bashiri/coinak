@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { priceFormatter } from "../../../../utils/priceFormatter";
+import { priceFormatter } from "@utils/priceFormatter";
 
 import styles from "./currencies-table-item.module.scss";
 

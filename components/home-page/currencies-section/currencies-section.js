@@ -1,6 +1,6 @@
 import { useInView } from "react-intersection-observer";
 
-import { useCoins } from "../../../hooks/useCoins";
+import { useCoins } from "@hooks/useCoins";
 import CurrenciesTable from "./currencies-table/currencies-table";
 
 import styles from "./currencies-section.module.scss";
