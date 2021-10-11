@@ -6,7 +6,7 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import styles from "./currencies-table.module.scss";
 
 function CurrenciesTable(props) {
-  const { coins, loading, nextPage, prevPage, hasNext, hasPrev } = props;
+  const { coins, loading } = props;
 
   return (
     <div className={styles.container}>
@@ -40,15 +40,6 @@ function CurrenciesTable(props) {
           </>
         )}
       </table>
-
-      <div className={styles.pagination}>
-        <button disabled={!hasNext} onClick={nextPage}>
-          Next Page
-        </button>
-        <button disabled={!hasPrev} onClick={prevPage}>
-          Previous Page
-        </button>
-      </div>
     </div>
   );
 }

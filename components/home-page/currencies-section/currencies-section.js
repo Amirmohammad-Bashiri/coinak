@@ -32,14 +32,15 @@ function CurrenciesSection() {
         <div className={styles.currencies__header}>
           <h1>Cryptocurrency Prices by Market Cap</h1>
         </div>
-        <CurrenciesTable
-          coins={coins}
-          loading={loading}
-          prevPage={prevPage}
-          nextPage={nextPage}
-          hasNext={hasNext}
-          hasPrev={hasPrev}
-        />
+        <CurrenciesTable coins={coins} loading={loading} />
+        <div className={styles.pagination}>
+          <button disabled={!hasNext} onClick={nextPage}>
+            Next Page
+          </button>
+          <button disabled={!hasPrev} onClick={prevPage}>
+            Previous Page
+          </button>
+        </div>
       </div>
     </section>
   );
