@@ -7,7 +7,9 @@ import styles from "./currencies-table-item.module.scss";
 function CurrenciesTableItem({ coin }) {
   const coinId = coin.image.split("/")[5];
   const sparklineUrl = `https://www.coingecko.com/coins/${coinId}/sparkline`;
-  const changePercentage = coin.market_cap_change_percentage_24h.toString();
+  const changePercentage = coin.market_cap_change_percentage_24h
+    .toFixed(1)
+    .toString();
   const changePercentageClass = changePercentage.startsWith("-")
     ? "price__down"
     : "price__up";
@@ -21,10 +23,10 @@ function CurrenciesTableItem({ coin }) {
         </div>
       </td>
       <td>{coin.symbol.toUpperCase()}</td>
-      <td>${priceFormatter(coin.current_price)}</td>
+      <td>{priceFormatter(coin.current_price)}</td>
       <td className={styles[changePercentageClass]}>{changePercentage}%</td>
-      <td>${priceFormatter(coin.total_volume)}</td>
-      <td>${priceFormatter(coin.market_cap)}</td>
+      <td>{priceFormatter(coin.total_volume)}</td>
+      <td>{priceFormatter(coin.market_cap)}</td>
       <td className={styles.currencies__table__sparkline}>
         <Image
           src={sparklineUrl}
