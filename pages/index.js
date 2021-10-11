@@ -1,4 +1,4 @@
-import { fetchTrendingCoins } from "../client";
+import { fetchTrendingCoins } from "../clients/coinGeckoClient";
 import Hero from "@components/home-page/hero/hero";
 import TrendingSection from "@components/home-page/trending-section/trending-section";
 import CurrenciesSection from "@components/home-page/currencies-section/currencies-section";

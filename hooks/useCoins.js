@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { fetchCoins } from "../client";
+import { fetchCoins } from "../clients/coinGeckoClient";
 
 export const useCoins = (inView, page = 1, currency = "usd", perPage = 10) => {
   const [data, setData] = useState([]);
