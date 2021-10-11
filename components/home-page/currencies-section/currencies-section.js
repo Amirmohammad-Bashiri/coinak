@@ -6,10 +6,8 @@ import CurrenciesTable from "./currencies-table/currencies-table";
 import styles from "./currencies-section.module.scss";
 
 function CurrenciesSection() {
-  const { ref, inView, entry } = useInView({ threshold: 0.3 });
-  const [coins, loading, error] = useCoins();
-
-  console.log(inView);
+  const { ref, inView } = useInView({ threshold: 0 });
+  const [coins, loading, error] = useCoins(inView);
 
   return (
     <section ref={ref} id="currencies" className="bg-gray-8">
