@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import CurrenciesTableItem from "../currencies-table-item/currencies-table-item";
 
 import styles from "./currencies-table.module.scss";
