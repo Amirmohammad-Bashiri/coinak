@@ -1,0 +1,19 @@
+.currencies__table__coin {
+  display: flex;
+
+  span {
+    margin-left: 0.7rem;
+  }
+}
+
+.currencies__table__sparkline {
+  width: 220px;
+}
+
+@media (max-width: 420px) {
+  .currencies__table__coin {
+    span {
+      margin-left: 0;
+    }
+  }
+}

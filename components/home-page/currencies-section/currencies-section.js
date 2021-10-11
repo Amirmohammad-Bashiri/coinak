@@ -6,8 +6,6 @@ import styles from "./currencies-section.module.scss";
 function CurrenciesSection() {
   const [coins, loading, error] = useCoins();
 
-  if (!loading) console.log(coins);
-
   return (
     <section id="currencies" className="bg-gray-8">
       <div className={styles.currencies}>

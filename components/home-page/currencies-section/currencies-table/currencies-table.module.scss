@@ -22,18 +22,6 @@
     td {
       color: $gray-2;
     }
-
-    .currencies__table__coin {
-      display: flex;
-
-      span {
-        margin-left: 0.7rem;
-      }
-    }
-
-    .currencies__table__sparkline {
-      width: 220px;
-    }
   }
 }
 
@@ -70,12 +58,6 @@
       th,
       td {
         font-size: $font-sm;
-      }
-
-      .currencies__table__coin {
-        span {
-          margin-left: 0;
-        }
       }
     }
   }
