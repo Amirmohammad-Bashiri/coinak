@@ -10,9 +10,13 @@ function CurrenciesTable({ coins, loading }) {
     <div className={styles.container}>
       <table className={styles.currencies__table}>
         {loading ? (
-          <div className={styles.table__placeholder}>
-            <Loader type="Rings" color="#e5e7eb" height={150} width={150} />
-          </div>
+          <tbody>
+            <tr className={styles.table__placeholder}>
+              <td style={{ borderBottom: 0 }}>
+                <Loader type="Rings" color="#e5e7eb" height={150} width={150} />
+              </td>
+            </tr>
+          </tbody>
         ) : (
           <>
             <thead>
