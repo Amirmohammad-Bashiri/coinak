@@ -3,6 +3,7 @@
   align-items: center;
 
   span {
+    font-weight: bold;
     margin-left: 0.7rem;
   }
 }
@@ -13,8 +14,6 @@
 
 @media (max-width: 420px) {
   .currencies__table__coin {
-    // justify-content: space-between;
-
     img {
       min-width: 20px;
     }

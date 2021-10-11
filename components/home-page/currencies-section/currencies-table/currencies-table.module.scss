@@ -22,6 +22,10 @@
     td {
       color: $gray-2;
     }
+
+    th {
+      padding-bottom: 1.2rem;
+    }
   }
 }
 
@@ -58,6 +62,10 @@
       th,
       td {
         font-size: $font-sm;
+      }
+
+      th {
+        padding-bottom: 0.8rem;
       }
     }
   }
