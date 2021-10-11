@@ -12,7 +12,7 @@ function CurrenciesSection() {
         <div className={styles.currencies__header}>
           <h1>Cryptocurrency Prices by Market Cap</h1>
         </div>
-        <CurrenciesTable coins={coins} />
+        <CurrenciesTable coins={coins} loading={loading} />
       </div>
     </section>
   );

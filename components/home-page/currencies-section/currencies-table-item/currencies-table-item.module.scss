@@ -1,3 +1,5 @@
+@import "../../../../styles/variables";
+
 .currencies__table__coin {
   display: flex;
   align-items: center;
@@ -22,4 +24,12 @@
       margin-left: 0.7rem;
     }
   }
+}
+
+.price__up {
+  color: $emerald-3;
+}
+
+.price__down {
+  color: $red-1;
 }
