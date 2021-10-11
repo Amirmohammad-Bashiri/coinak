@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+import { numberFormatter } from "../../../../utils/numberFormatter";
+
 import styles from "./currencies-table-item.module.scss";
 
 function CurrenciesTableItem({ coin }) {
@@ -15,10 +17,10 @@ function CurrenciesTableItem({ coin }) {
         </div>
       </td>
       <td>{coin.symbol.toUpperCase()}</td>
-      <td>${coin.current_price}</td>
+      <td>${numberFormatter(coin.current_price)}</td>
       <td>{coin.market_cap_change_percentage_24h}%</td>
-      <td>${coin.total_volume}</td>
-      <td>${coin.market_cap}</td>
+      <td>${numberFormatter(coin.total_volume)}</td>
+      <td>${numberFormatter(coin.market_cap)}</td>
       <td className={styles.currencies__table__sparkline}>
         <Image
           src={sparklineUrl}
