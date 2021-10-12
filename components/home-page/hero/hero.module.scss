@@ -61,11 +61,13 @@
 
     .hero__headline {
       font-size: $font-5xl;
+      padding-bottom: 2rem;
     }
 
     .hero__description {
       max-width: 50%;
       font-size: $font-3xl;
+      padding-bottom: 6rem;
     }
   }
 }

@@ -7,6 +7,9 @@ import TrendingSection from "@components/home-page/trending-section/trending-sec
 const CurrenciesSection = dynamic(() =>
   import("@components/home-page/currencies-section/currencies-section")
 );
+const NewsSection = dynamic(() =>
+  import("@components/home-page/news-section/news-section")
+);
 
 function HomePage({ trendingCoins }) {
   return (
@@ -14,8 +17,7 @@ function HomePage({ trendingCoins }) {
       <Hero />
       <TrendingSection trendingCoins={trendingCoins} />
       <CurrenciesSection />
-
-      {/* News section */}
+      <NewsSection />
     </div>
   );
 }
