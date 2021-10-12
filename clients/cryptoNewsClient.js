@@ -14,7 +14,7 @@ const config = {
 
 export const fetchCryptoNews = async () => {
   const { data } = await cryptoNewsClient.get(
-    "/news/search?q=Cryptocurrency&safeSearch=off&textFormat=Raw&freshness=Day&count=8",
+    "/news/search?q=Cryptocurrency&safeSearch=off&textFormat=Raw&freshness=Day&count=12",
     config
   );
 

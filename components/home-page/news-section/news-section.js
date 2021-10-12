@@ -34,8 +34,8 @@ function NewsSection() {
                   <Image
                     src={item.image.thumbnail.contentUrl}
                     alt="news thumbnail"
-                    width={50}
-                    height={50}
+                    width={70}
+                    height={70}
                   />
                 </div>
               </div>
