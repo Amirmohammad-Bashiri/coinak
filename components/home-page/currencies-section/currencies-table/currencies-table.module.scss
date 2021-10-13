@@ -74,6 +74,8 @@
 
     .currencies__table {
       min-width: 700px;
+      max-height: 700px;
+      min-height: 700px;
 
       th,
       td {
@@ -86,7 +88,7 @@
 
       .table__placeholder {
         width: 320px;
-        height: 500px;
+        height: 700px;
       }
     }
   }
