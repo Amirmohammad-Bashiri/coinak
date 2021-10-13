@@ -13,7 +13,6 @@ function TrendingCoinCard({ coin }) {
 
   return (
     <div className={`${styles.card} text-gray-2 p-2`}>
-      <div className={styles.card__background}></div>
       <div className={styles.card__header}>
         <h3>{coin.name}</h3>
         <Image src={coin.image} alt={coin.name} width={30} height={30} />

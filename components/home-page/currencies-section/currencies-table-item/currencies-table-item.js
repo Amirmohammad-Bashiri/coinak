@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { priceFormatter } from "@utils/priceFormatter";
 
@@ -19,7 +20,11 @@ function CurrenciesTableItem({ coin }) {
       <td>
         <div className={styles.currencies__table__coin}>
           <Image src={coin.image} alt={coin.symbol} width={25} height={25} />{" "}
-          <span>{coin.name}</span>
+          <Link href={`/${coin.id}`}>
+            <a>
+              <span>{coin.name}</span>
+            </a>
+          </Link>
         </div>
       </td>
       <td>{coin.symbol.toUpperCase()}</td>
