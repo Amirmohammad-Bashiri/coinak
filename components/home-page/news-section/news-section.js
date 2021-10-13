@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import Image from "next/image";
 
 import { fetchCryptoNews } from "../../../clients/cryptoNewsClient";
+import NewsItem from "./news-item/news-item";
 
 import styles from "./news-section.module.scss";
 
@@ -11,7 +11,6 @@ function NewsSection() {
   useEffect(() => {
     fetchCryptoNews().then(data => {
       setNews(data);
-      console.table(data);
     });
   }, []);
 
@@ -24,21 +23,7 @@ function NewsSection() {
         <div className={styles.news__grid}>
           {news.map((item, idx) => (
             <div key={idx} className={styles.news__item}>
-              <div className={styles.item__header}>
-                <h3>
-                  <a href={item.url} target="_blank" rel="noopener noreferrer">
-                    {item.name}
-                  </a>
-                </h3>
-                <div>
-                  <Image
-                    src={item.image.thumbnail.contentUrl}
-                    alt="news thumbnail"
-                    width={70}
-                    height={70}
-                  />
-                </div>
-              </div>
+              <NewsItem item={item} />
             </div>
           ))}
         </div>

@@ -1,0 +1,42 @@
+@import "@styles/variables";
+
+.item__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  color: $gray-3;
+  font-size: $font-sm;
+
+  h1 {
+    cursor: pointer;
+  }
+
+  img {
+    min-width: 50px;
+    max-width: 50px;
+    min-height: 50px;
+    max-height: 50px;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: 768px) {
+  .item__header {
+    font-size: $font-base;
+
+    img {
+      min-width: 60px;
+      min-height: 60px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .item__header {
+    img {
+      min-width: 70px;
+      min-height: 70px;
+    }
+  }
+}

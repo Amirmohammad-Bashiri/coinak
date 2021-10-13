@@ -14,6 +14,7 @@
   .news__grid {
     display: grid;
     grid-template-columns: 1fr;
+    align-items: center;
     row-gap: 35px;
 
     .news__item {
@@ -21,27 +22,6 @@
       background-color: $gray-8;
       background-image: linear-gradient(315deg, $gray-6 0%, $gray-8 74%);
       border-radius: 5px;
-
-      .item__header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        column-gap: 10px;
-        color: $gray-3;
-        font-size: $font-sm;
-
-        h1 {
-          cursor: pointer;
-        }
-
-        img {
-          min-width: 50px;
-          max-width: 50px;
-          min-height: 50px;
-          max-height: 50px;
-          border-radius: 3px;
-        }
-      }
     }
   }
 }
@@ -59,17 +39,6 @@
     .news__grid {
       grid-template-columns: 1fr 1fr;
       gap: 35px;
-
-      .news__item {
-        .item__header {
-          font-size: $font-base;
-
-          img {
-            min-width: 60px;
-            min-height: 60px;
-          }
-        }
-      }
     }
   }
 }
@@ -86,15 +55,6 @@
 
     .news__grid {
       grid-template-columns: 1fr 1fr 1fr;
-
-      .news__item {
-        .item__header {
-          img {
-            min-width: 70px;
-            min-height: 70px;
-          }
-        }
-      }
     }
   }
 }
@@ -111,15 +71,6 @@
 
     .news__grid {
       grid-template-columns: 1fr 1fr 1fr 1fr;
-
-      .news__item {
-        .item__header {
-          img {
-            min-width: 70px;
-            min-height: 70px;
-          }
-        }
-      }
     }
   }
 }
