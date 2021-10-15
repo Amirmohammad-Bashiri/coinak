@@ -10,7 +10,8 @@ function NewsSection() {
 
   useEffect(() => {
     fetchCryptoNews().then(data => {
-      setNews(data);
+      const newData = data.filter(Boolean);
+      setNews(newData);
     });
   }, []);
 
@@ -21,7 +22,7 @@ function NewsSection() {
           <h1>Latest Crypto News</h1>
         </div>
         <div className={styles.news__grid}>
-          {news.map((item, idx) => (
+          {news?.map((item, idx) => (
             <div key={idx} className={styles.news__item}>
               <NewsItem item={item} />
             </div>
