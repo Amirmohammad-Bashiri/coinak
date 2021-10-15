@@ -1,0 +1,39 @@
+@import "@styles/variables";
+
+.changes__item {
+  background-color: $gray-6;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+
+  .changes__item__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h4 {
+      color: $gray-2;
+    }
+
+    h5 {
+      color: $emerald-3;
+      font-size: $font-base;
+    }
+  }
+
+  .changes__item__body {
+    p {
+      color: $gray-3;
+      font-size: $font-lg;
+      font-weight: 700;
+    }
+  }
+}
+
+.divider--horizontal {
+  width: 100%;
+  height: 1px;
+  background-color: $gray-4;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
