@@ -1,5 +1,15 @@
+import CoinVolumeChanges from "@components/coin-detail-page/coin-volume-changes/coin-volume-changes";
+
 function CoinDetailsPage() {
-  return <div>CoinsDetailsPage</div>;
+  return (
+    <div style={{ height: "100vh" }} className="bg-gray-7">
+      {/* CoinVolumeChanges */}
+      <CoinVolumeChanges />
+
+      {/* CoinChart */}
+      {/* CoinPirceStatistics  */}
+    </div>
+  );
 }
 
 export default CoinDetailsPage;
