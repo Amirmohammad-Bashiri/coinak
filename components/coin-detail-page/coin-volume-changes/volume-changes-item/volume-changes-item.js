@@ -1,17 +1,17 @@
 import styles from "./volume-changes-item.module.scss";
 
-function VolumeChangesItem() {
+function VolumeChangesItem({ title, detail, volume }) {
   return (
     <div className={styles.changes__item}>
       <div className={styles.changes__item__header}>
-        <h4>Market cap</h4>
-        <h5>0.50%</h5>
+        <h4>{title}</h4>
+        <h5>{detail}</h5>
       </div>
 
       <div className={styles["divider--horizontal"]}></div>
 
       <div className={styles.changes__item__body}>
-        <p>$275,580,894</p>
+        <p>${volume}</p>
       </div>
     </div>
   );

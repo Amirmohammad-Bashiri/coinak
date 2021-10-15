@@ -2,7 +2,7 @@ import CoinVolumeChanges from "@components/coin-detail-page/coin-volume-changes/
 
 function CoinDetailsPage() {
   return (
-    <div style={{ height: "100vh" }} className="bg-gray-7">
+    <div style={{ height: "100vh" }} className="bg-gray-8">
       {/* CoinVolumeChanges */}
       <CoinVolumeChanges />
 
