@@ -31,6 +31,15 @@ function CoinChart({ coinId }) {
   };
 
   const options = {
+    responsive: true,
+    tooltips: {
+      mode: "index",
+      intersect: false,
+    },
+    hover: {
+      mode: "nearest",
+      intersect: false,
+    },
     scales: {
       yAxes: [
         {
