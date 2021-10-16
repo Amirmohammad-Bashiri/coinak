@@ -2,10 +2,12 @@
 
 .container {
   padding: 7rem 0;
-  // overflow-x: scroll;
 
   .chart {
+    padding: 1rem 0;
+
     .chart__body {
+      height: 300px;
     }
   }
 }

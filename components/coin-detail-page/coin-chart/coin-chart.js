@@ -24,15 +24,28 @@ function CoinChart({ coinId }) {
         label: "Price in USD",
         data: values,
         fill: false,
-        backgroundColor: "rgb(255, 99, 132)",
-        borderColor: "rgba(255, 99, 132, 0.2)",
+        backgroundColor: "#059669",
+        borderColor: "#10b981",
       },
     ],
   };
 
   const options = {
-    responsive: true,
-    mainTainAspectRatio: false,
+    maintainAspectRatio: false,
+    interaction: {
+      mode: "nearest",
+      intersect: false,
+    },
+    elements: {
+      point: {
+        radius: 0,
+      },
+    },
+    plugins: {
+      legend: {
+        display: false,
+      },
+    },
     tooltips: {
       mode: "nearest",
       intersect: false,
