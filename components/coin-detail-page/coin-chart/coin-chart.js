@@ -21,10 +21,11 @@ function CoinChart({ coinId }) {
     labels: labels,
     datasets: [
       {
-        label: "Price in USD",
         data: values,
         fill: false,
-        backgroundColor: "#059669",
+        pointBorderWidth: 2,
+        pointBackgroundColor: "#111827",
+        pointBorderColor: "#10b981",
         borderColor: "#10b981",
       },
     ],
@@ -32,10 +33,6 @@ function CoinChart({ coinId }) {
 
   const options = {
     maintainAspectRatio: false,
-    interaction: {
-      mode: "nearest",
-      intersect: false,
-    },
     elements: {
       point: {
         radius: 0,
@@ -45,11 +42,24 @@ function CoinChart({ coinId }) {
       legend: {
         display: false,
       },
+      tooltip: {
+        displayColors: false,
+        titleFont: {
+          weight: "normal",
+        },
+        bodyFont: {
+          size: 14,
+          weight: "bold",
+        },
+        mode: "nearest",
+        intersect: false,
+        padding: 20,
+        caretPadding: 14,
+        caretSize: 8,
+        yAlign: "bottom",
+      },
     },
-    tooltips: {
-      mode: "nearest",
-      intersect: false,
-    },
+
     hover: {
       mode: "nearest",
       intersect: false,
