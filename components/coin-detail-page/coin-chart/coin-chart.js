@@ -32,8 +32,9 @@ function CoinChart({ coinId }) {
 
   const options = {
     responsive: true,
+    mainTainAspectRatio: false,
     tooltips: {
-      mode: "index",
+      mode: "nearest",
       intersect: false,
     },
     hover: {
