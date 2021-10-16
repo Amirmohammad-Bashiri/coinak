@@ -8,7 +8,7 @@ function CoinDetailsPage({ coin }) {
   const { query } = useRouter();
 
   return (
-    <div style={{ height: "100vh" }} className="bg-gray-8">
+    <div className="bg-gray-8">
       <CoinVolumeChanges coin={coin} />
       <CoinChart coinId={query.coinId} />
       {/* CoinPirceStatistics  */}
