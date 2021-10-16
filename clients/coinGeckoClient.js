@@ -20,10 +20,18 @@ export const fetchCoins = async (currency, perPage, page) => {
   return data;
 };
 
-export const fetchCoinDetails = async (currency = "usd", coinId) => {
+export const fetchCoinDetails = async (currency, coinId) => {
   const { data } = await coinGeckoClient.get(
     `/coins/markets?vs_currency=${currency}&ids=${coinId}&order=market_cap_desc&per_page=1&page=1&sparkline=false`
   );
 
   return data;
+};
+
+export const fetchCoinMarketData = async (currency, coinId, days) => {
+  const { data } = await coinGeckoClient.get(
+    `/coins/${coinId}/market_chart?vs_currency=${currency}&days=${days}`
+  );
+
+  return data.prices;
 };
