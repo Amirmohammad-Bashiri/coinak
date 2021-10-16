@@ -26,6 +26,7 @@
     max-width: 80%;
 
     .changes {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
       row-gap: 0;
     }
   }

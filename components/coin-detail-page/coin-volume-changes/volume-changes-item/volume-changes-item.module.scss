@@ -2,8 +2,10 @@
 
 .changes__item {
   background-color: $gray-7;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 5px;
+  border: 1px solid $gray-6;
+  box-shadow: 1px 5px 10px rgb(10, 10, 10);
 
   .changes__item__header {
     display: flex;
@@ -14,9 +16,10 @@
       color: $gray-2;
     }
 
-    h5 {
-      color: $emerald-3;
-      font-size: $font-base;
+    .changes__item__header__icon {
+      color: $gray-2;
+      background-color: $gray-6;
+      width: 8%;
     }
   }
 
@@ -45,6 +48,6 @@
 
 @media (min-width: 1440px) {
   .changes__item {
-    max-width: 350px;
+    max-width: 300px;
   }
 }
