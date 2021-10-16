@@ -56,7 +56,7 @@ function CoinChart({ coinId }) {
         padding: 20,
         caretPadding: 14,
         caretSize: 8,
-        yAlign: "bottom",
+        yAlign: "center",
       },
     },
 
