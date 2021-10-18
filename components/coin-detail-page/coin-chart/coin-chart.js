@@ -7,7 +7,7 @@ import styles from "./coin-chart.module.scss";
 
 function CoinChart({ coinId }) {
   const [currency, setCurrency] = useState("usd");
-  const [days, setDays] = useState("7");
+  const [days, setDays] = useState("1");
   const { marketData, loading } = useMarketData(currency, coinId, days);
 
   const labels = marketData.map(item =>
@@ -67,10 +67,13 @@ function CoinChart({ coinId }) {
       intersect: false,
     },
     scales: {
+      x: {
+        display: false,
+      },
       yAxes: [
         {
           ticks: {
-            beginAtZero: true,
+            display: false,
           },
         },
       ],
