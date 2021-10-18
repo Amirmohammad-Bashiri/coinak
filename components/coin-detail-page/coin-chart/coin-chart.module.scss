@@ -11,3 +11,39 @@
     }
   }
 }
+
+@media (min-width: 768px) {
+  .container {
+    padding: 8rem 0;
+
+    .chart {
+      .chart__body {
+        height: 400px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .contianer {
+    padding: 9rem 0;
+
+    .chart {
+      .chart__body {
+        height: 500px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    padding: 11rem 0;
+
+    .chart {
+      .chart__body {
+        height: 600px;
+      }
+    }
+  }
+}
