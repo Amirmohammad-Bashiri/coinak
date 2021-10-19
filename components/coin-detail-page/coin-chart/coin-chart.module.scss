@@ -1,21 +1,50 @@
+@import "@styles/variables";
+
 .chart__body {
   height: 350px;
+  cursor: crosshair;
+
+  .chart__body__placeholder {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    background-color: $gray-7;
+
+    .chart__body__placeholder__loader {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 }
 
 @media (min-width: 768px) {
   .chart__body {
     height: 400px;
+
+    .chart__body__placeholder {
+      height: 400px;
+    }
   }
 }
 
 @media (min-width: 1280px) {
   .chart__body {
     height: 500px;
+
+    .chart__body__placeholder {
+      height: 500px;
+    }
   }
 }
 
 @media (min-width: 1440px) {
   .chart__body {
     height: 600px;
+
+    .chart__body__placeholder {
+      height: 600px;
+    }
   }
 }

@@ -1,8 +1,11 @@
 import { Line } from "react-chartjs-2";
 
+import Loader from "react-loader-spinner";
+
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import styles from "./coin-chart.module.scss";
 
-function CoinChart({ marketData }) {
+function CoinChart({ marketData, loading }) {
   const labels = marketData.map(item =>
     new Date(item[0]).toLocaleDateString("en-US", {
       year: "numeric",
@@ -75,7 +78,19 @@ function CoinChart({ marketData }) {
 
   return (
     <div className={styles.chart__body}>
-      <Line data={data} options={options} />
+      {loading ? (
+        <div className={styles.chart__body__placeholder}>
+          <Loader
+            className={styles.chart__body__placeholder__loader}
+            type="Rings"
+            color="#e5e7eb"
+            height={200}
+            width={200}
+          />
+        </div>
+      ) : (
+        <Line data={data} options={options} />
+      )}
     </div>
   );
 }

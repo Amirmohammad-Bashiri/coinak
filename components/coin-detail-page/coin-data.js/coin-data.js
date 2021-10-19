@@ -36,7 +36,7 @@ function CoinData({ coinId, coin }) {
           </select>
         </div>
 
-        <CoinChart marketData={marketData} />
+        <CoinChart marketData={marketData} loading={loading} />
       </div>
 
       <CoinPriceStatistics coin={coin} />
