@@ -10,7 +10,7 @@ function CoinDetailsPage({ coin }) {
   return (
     <div className="bg-gray-8">
       <CoinVolumeChanges coin={coin} />
-      <CoinData coinId={query.coinId} />
+      <CoinData coinId={query.coinId} coin={coin} />
       {/* CoinPirceStatistics  */}
     </div>
   );

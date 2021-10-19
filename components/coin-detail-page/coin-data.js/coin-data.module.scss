@@ -1,6 +1,9 @@
 @import "@styles/variables";
 
 .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 6rem;
   padding-top: 5rem;
   padding-bottom: 6rem;
   margin-top: 3rem;
@@ -27,6 +30,49 @@
       }
     }
   }
+
+  .price {
+    background-color: $gray-8;
+    margin: 1rem 4rem;
+    padding: 1rem;
+
+    .price__header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2rem;
+
+      .price__header__logo {
+        max-width: 45px;
+      }
+
+      .price__header__info {
+        margin-left: 1.5rem;
+        color: $gray-3;
+        font-weight: bold;
+
+        .price__header__info__symbol {
+          color: $gray-4;
+          margin-bottom: 0.3rem;
+        }
+      }
+    }
+
+    .price__body {
+      .price__body__item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 2rem 0;
+  background-color: $gray-4;
 }
 
 @media (min-width: 768px) {
