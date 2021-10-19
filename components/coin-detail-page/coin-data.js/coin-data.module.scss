@@ -1,8 +1,8 @@
 @import "@styles/variables";
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: flex;
+  flex-direction: column;
   row-gap: 6rem;
   padding-top: 5rem;
   padding-bottom: 6rem;
@@ -33,7 +33,7 @@
 
   .price {
     background-color: $gray-8;
-    margin: 1rem 4rem;
+    margin: 1rem 2.5rem;
     padding: 1rem;
 
     .price__header {
@@ -43,16 +43,17 @@
       margin-bottom: 2rem;
 
       .price__header__logo {
-        max-width: 45px;
+        max-width: 40px;
+        max-height: 40px;
       }
 
       .price__header__info {
-        margin-left: 1.5rem;
+        margin-left: 1rem;
         color: $gray-3;
         font-weight: bold;
 
         .price__header__info__symbol {
-          color: $gray-4;
+          color: $gray-5;
           margin-bottom: 0.3rem;
         }
       }
@@ -63,6 +64,22 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        p {
+          color: $gray-4;
+        }
+
+        span {
+          color: $gray-5;
+        }
+
+        .price__down {
+          color: $red-1;
+        }
+
+        .price__up {
+          color: $emerald-3;
+        }
       }
     }
   }
@@ -71,7 +88,7 @@
 .divider {
   width: 100%;
   height: 1px;
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   background-color: $gray-4;
 }
 

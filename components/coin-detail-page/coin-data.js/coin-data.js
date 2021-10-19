@@ -12,6 +12,10 @@ function CoinData({ coinId, coin }) {
   const [days, setDays] = useState("1");
   const { marketData, loading } = useMarketData(currency, coinId, days);
 
+  const priceChangePercentage = coin.price_change_percentage_24h.toFixed(2);
+  const isPriceDown = String(priceChangePercentage).startsWith("-");
+  const priceChangeClass = isPriceDown ? "price__down" : "price__up";
+
   const handleCurrencyChange = e => {
     setCurrency(e.target.value);
   };
@@ -56,8 +60,38 @@ function CoinData({ coinId, coin }) {
         <div className={styles.price__body}>
           <div className={styles.price__body__item}>
             <p>Price</p>
-            <p>{priceFormatter(coin.current_price)}</p>
+            <span>{priceFormatter(coin.current_price)}</span>
           </div>
+          <div className={styles.divider}></div>
+          <div className={styles.price__body__item}>
+            <p>Price Change</p>
+            <span className={styles[priceChangeClass]}>
+              {priceFormatter(coin.price_change_24h)}
+            </span>
+          </div>
+          <div className={styles.divider}></div>
+          <div className={styles.price__body__item}>
+            <p>Price Change Percentage</p>
+            <span className={styles[priceChangeClass]}>
+              {priceChangePercentage}%
+            </span>
+          </div>
+          <div className={styles.divider}></div>
+          <div className={styles.price__body__item}>
+            <p>24h High</p>
+            <span>{coin.high_24h}</span>
+          </div>
+          <div className={styles.divider}></div>
+          <div className={styles.price__body__item}>
+            <p>24h Low</p>
+            <span>{coin.low_24h}</span>
+          </div>
+          <div className={styles.divider}></div>
+          <div className={styles.price__body__item}>
+            <p>Volume</p>
+            <span>{priceFormatter(coin.total_volume)}</span>
+          </div>
+          <div className={styles.divider}></div>
         </div>
       </div>
     </div>
