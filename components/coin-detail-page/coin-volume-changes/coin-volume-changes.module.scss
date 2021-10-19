@@ -24,6 +24,8 @@
 @media (min-width: 1280px) {
   .container {
     max-width: 80%;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
 
     .changes {
       grid-template-columns: 1fr 1fr 1fr 1fr;

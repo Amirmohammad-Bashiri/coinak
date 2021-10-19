@@ -11,7 +11,6 @@ function CoinDetailsPage({ coin }) {
     <div className="bg-gray-8">
       <CoinVolumeChanges coin={coin} />
       <CoinData coinId={query.coinId} coin={coin} />
-      {/* CoinPirceStatistics  */}
     </div>
   );
 }
