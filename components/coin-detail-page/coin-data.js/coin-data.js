@@ -1,11 +1,8 @@
 import { useState } from "react";
-import dynamic from "next/dynamic";
 
 import { useMarketData } from "@hooks/useMarketData";
 import CoinChart from "../coin-chart/coin-chart";
-const CoinPriceStatistics = dynamic(() =>
-  import("../coin-price-statistics/coin-price-statistics")
-);
+import CoinPriceStatistics from "../coin-price-statistics/coin-price-statistics";
 
 import styles from "./coin-data.module.scss";
 
