@@ -25,7 +25,7 @@ function Navbar() {
               </Link>
             </li>
             <li className="text-hover-emerald-2">
-              <Link href="#news">
+              <Link href="/#news">
                 <a>News</a>
               </Link>
             </li>

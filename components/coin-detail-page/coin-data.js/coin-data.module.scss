@@ -35,11 +35,13 @@
     background-color: $gray-8;
     margin: 1rem 2.5rem;
     padding: 1rem;
+    border-radius: 5px;
 
     .price__header {
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 1rem;
       margin-bottom: 2rem;
 
       .price__header__logo {
@@ -106,12 +108,38 @@
         }
       }
     }
+
+    .price {
+      .price__header {
+        font-size: $font-lg;
+
+        .price__header__logo {
+          max-width: 60px;
+          max-height: 60px;
+        }
+      }
+    }
   }
 }
 
 @media (min-width: 1280px) {
-  .contianer {
+  .container {
     padding: 9rem 0;
+
+    .price {
+      margin: 1rem 10rem;
+      padding: 1rem 4rem;
+
+      .price__header {
+        font-size: $font-2xl;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+      }
+
+      .price__body {
+        font-size: $font-xl;
+      }
+    }
   }
 }
 
