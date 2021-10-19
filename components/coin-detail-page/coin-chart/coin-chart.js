@@ -46,7 +46,7 @@ function CoinChart({ marketData }) {
           size: 14,
           weight: "bold",
         },
-        mode: "nearest",
+        mode: "index",
         intersect: false,
         padding: 20,
         caretPadding: 14,
@@ -56,7 +56,7 @@ function CoinChart({ marketData }) {
     },
 
     hover: {
-      mode: "nearest",
+      mode: "index",
       intersect: false,
     },
     scales: {
