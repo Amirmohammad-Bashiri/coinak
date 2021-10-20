@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 import { useCoins } from "@hooks/useCoins";
 import CurrenciesTable from "./currencies-table/currencies-table";
@@ -7,7 +8,8 @@ import styles from "./currencies-section.module.scss";
 
 function CurrenciesSection() {
   const [page, setPage] = useState(1);
-  const [coins, loading, error] = useCoins(page);
+  const { ref, inView } = useInView({ threshold: 0, triggerOnce: true });
+  const [coins, loading, error] = useCoins(page, inView);
 
   const hasNext = page < 250;
   const hasPrev = page > 1;
@@ -26,7 +28,7 @@ function CurrenciesSection() {
 
   return (
     <section id="currencies" className="bg-gray-8">
-      <div className={styles.currencies}>
+      <div ref={ref} className={styles.currencies}>
         <div className={styles.currencies__header}>
           <h1>Cryptocurrency Prices by Market Cap</h1>
         </div>
