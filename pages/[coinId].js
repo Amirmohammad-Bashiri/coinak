@@ -18,6 +18,12 @@ function CoinDetailsPage({ coin }) {
 export async function getServerSideProps(context) {
   const data = await fetchCoinDetails("usd", context.query.coinId);
 
+  if (!data.length) {
+    return {
+      notFound: true,
+    };
+  }
+
   return {
     props: {
       coin: data[0],
