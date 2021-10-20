@@ -27,8 +27,8 @@ function CurrenciesSection() {
   };
 
   return (
-    <section id="currencies" className="bg-gray-8">
-      <div ref={ref} className={styles.currencies}>
+    <section ref={ref} id="currencies" className="bg-gray-8">
+      <div className={styles.currencies}>
         <div className={styles.currencies__header}>
           <h1>Cryptocurrency Prices by Market Cap</h1>
         </div>

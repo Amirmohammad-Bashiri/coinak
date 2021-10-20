@@ -1,0 +1,86 @@
+@import "@styles/variables";
+
+.skeleton__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  width: 100%;
+  height: 100%;
+  padding: 3rem 1rem;
+  background-color: $gray-8;
+  border-radius: 5px;
+
+  .skeleton__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    div {
+      width: 100%;
+      height: 10px;
+      background-color: $gray-7;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      animation: shine-lines 1.6s;
+    }
+
+    div::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -150px;
+      top: 0;
+      height: 100%;
+      width: 150px;
+      background: linear-gradient(
+        to right,
+        transparent 0%,
+        #e8e8e8 50%,
+        transparent 100%
+      );
+      animation: load 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+  }
+
+  .skeleton__image {
+    position: relative;
+    overflow: hidden;
+    max-width: 70px;
+    min-width: 70px;
+    max-height: 70px;
+    min-height: 70px;
+    background-color: $gray-7;
+    border-radius: 5px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: -150px;
+      top: 0;
+      height: 100%;
+      width: 150px;
+      background: linear-gradient(
+        to right,
+        transparent 0%,
+        #e8e8e8 50%,
+        transparent 100%
+      );
+      animation: load 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    }
+  }
+}
+
+@keyframes load {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 100%;
+  }
+}
