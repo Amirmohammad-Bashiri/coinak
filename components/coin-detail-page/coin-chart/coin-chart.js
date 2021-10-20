@@ -43,10 +43,11 @@ function CoinChart({ marketData, loading }) {
       tooltip: {
         displayColors: false,
         titleFont: {
+          size: 15,
           weight: "normal",
         },
         bodyFont: {
-          size: 14,
+          size: 17,
           weight: "bold",
         },
         mode: "index",
