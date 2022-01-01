@@ -32,7 +32,7 @@ function CurrenciesTableItem({ coin }) {
       <td className={styles[changePercentageClass]}>{changePercentage}%</td>
       <td>{priceFormatter(coin.total_volume)}</td>
       <td>{priceFormatter(coin.market_cap)}</td>
-      <td className={styles.currencies__table__sparkline}>
+      {/* <td className={styles.currencies__table__sparkline}>
         <Image
           src={sparklineUrl}
           alt="sparkline"
@@ -41,7 +41,7 @@ function CurrenciesTableItem({ coin }) {
           width="100%"
           objectFit="contain"
         />
-      </td>
+      </td> */}
     </tr>
   );
 }

@@ -10,9 +10,9 @@
   }
 }
 
-.currencies__table__sparkline {
-  width: 220px;
-}
+// .currencies__table__sparkline {
+//   width: 220px;
+// }
 
 @media (max-width: 920px) {
   .currencies__table__coin {
@@ -34,8 +34,10 @@
 
 .price__up {
   color: $emerald-3;
+  padding: 30px 0 !important;
 }
 
 .price__down {
   color: $red-1;
+  padding: 30px 0 !important;
 }

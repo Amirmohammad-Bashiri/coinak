@@ -29,7 +29,6 @@ function CurrenciesTable(props) {
                 <th>24h</th>
                 <th>24h Volume</th>
                 <th>Mkt Cap</th>
-                <th>Last 7 Days</th>
               </tr>
             </thead>
             <tbody>
