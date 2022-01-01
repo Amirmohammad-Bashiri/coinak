@@ -32,7 +32,7 @@ function CoinPriceStatistics({ coin }) {
         <div className={styles.price__body__item}>
           <p>Price Change</p>
           <span className={styles[priceChangeClass]}>
-            {priceFormatter(coin.price_change_24h)}
+            ${priceFormatter(coin.price_change_24h.toFixed(2))}
           </span>
         </div>
         <div className={styles.divider}></div>
