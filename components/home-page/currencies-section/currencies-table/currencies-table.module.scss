@@ -1,7 +1,6 @@
 @import "@styles/variables";
 
 .container {
-  overflow-x: scroll;
   border-radius: 5px;
 
   .currencies__table {
@@ -56,6 +55,7 @@
 @media (max-width: 920px) {
   .container {
     width: 700px;
+    overflow-x: scroll;
 
     .currencies__table {
       min-width: 900px;
@@ -71,6 +71,7 @@
 @media (max-width: 420px) {
   .container {
     width: 100%;
+    overflow-x: scroll;
 
     .currencies__table {
       min-width: 700px;
